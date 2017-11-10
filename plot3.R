@@ -4,7 +4,7 @@
 library(dplyr)
 
 #Read the data
-a <- read.table("household_power_consumption.txt", header = TRUE, sep = ";",stringsAsFactors = FALSE )
+a <- read.table("household_power_consumption.txt", header = TRUE, sep = ";",stringsAsFactors = FALSE, na.strings = "?" )
 
 # filter, add a POSIXct column for the date/time and convert to numeric  
 
